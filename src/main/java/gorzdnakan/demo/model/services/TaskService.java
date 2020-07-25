@@ -30,7 +30,8 @@ public class TaskService {
         int count2 = 0;
         int count3 = 0;
         for (Task task : tasks) {
-            switch (task.getCategory().getId()){//vercneng@ taski category-i id-n,ete count@(aysinqn entacategory_id) havasare  taski category-i id-in count ++ kexni,
+            switch (task.getCategory().getId()){//vercneng@ taski category-i id-n,ete 4,5,8-@ aysinqn sonq mer categorianeri idnerne,
+                // havasare  taski category-i id-in count ++ kexni,
                 // set u save kenenq or hishe;
                 case 4:
                     count1++;
@@ -58,7 +59,7 @@ public class TaskService {
 
         }
         List<Category> categories = topCategory.subList(0, 5);//stexel vercrinq listic injqan or petqe,
-   return categories;//stexel kxrgenq html 
+   return categories;//stexel kxrgenq html
     }
 
 
