@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+hello word
+<form action="/addTask">
+<ul th:each="task:${tasks}">
+    <li th:text="${task.tile}+' '+${task.category.name}+'_'+${task.category.id}"></li>
+</ul>
+</form>
+</body>
+</html>
